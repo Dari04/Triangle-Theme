@@ -204,11 +204,11 @@ ul li {
     right: 0px;
     bottom: 0px; }
   #home-slider .slider-circle1 {
-    right: 420px;
+    right: 435px;
     bottom: 210px; }
   #home-slider .slider-circle2 {
-    right: 415px;
-    bottom: 210px; }
+    right: 422px;
+    bottom: 241px; }
   #home-slider .slider-cloud1 {
     right: 290px;
     bottom: 250px; }
@@ -221,7 +221,7 @@ ul li {
   #home-slider .slider-sun {
     right: 200px;
     bottom: 300px; }
-  #home-slider .slider-clycle {
+  #home-slider .slider-cycle {
     right: 500px;
     bottom: 0px; }
   #home-slider h1, #home-slider .container h2, .container #home-slider h2, #home-slider #header h2, #header #home-slider h2 {
@@ -231,27 +231,27 @@ ul li {
     margin-top: 18px; }
 
 #action {
-  background: url(../images/home/tour-bg.png);
-  background: #FBFAFA;
-  background-repeat: repeat-x;
+  background-image: url(../images/home/tour-bg.png);
+  background-color: #FBFAFA;
   background-position: center;
   height: 160px;
-  display: table;
-  width: 100%;
-  position: relative; }
+  width: 100%; }
 
 .vertical-center {
   display: table-cell;
   width: 100%;
   vertical-align: middle; }
   .vertical-center .action h1, .vertical-center .action .container h2, .container .vertical-center .action h2, .vertical-center .action #header h2, #header .vertical-center .action h2 {
-    margin-top: none; }
+    margin-top: 50px;
+    margin-left: 30px; }
   .vertical-center .action p {
     margin-bottom: none;
+    margin-left: 30px;
     font-size: 16px; }
   .vertical-center .action .btn-common {
     float: left;
-    margin-top: none; }
+    margin-top: 57px;
+    margin-left: -15px; }
 
 .single-service {
   display: block;
@@ -294,7 +294,8 @@ ul li {
   background-repeat: no-repeat;
   background-position: 150px 5px;
   position: absolute;
-  width: 100%; }
+  width: 110%;
+  height: 160px; }
 
 #footer {
   background: url(../images/home/footer.png);
@@ -329,17 +330,26 @@ ul li {
   padding-right: 30px;
   position: relative;
   border-left: none;
-  margin-bottom: none; }
+  margin-bottom: none;
+  line-height: 1.1; }
 
 .testimonial .media .media-body blockquote:before {
-  position: absolute;
-  top: 8px;
-  left: 5px;
+  position: relative;
+  top: 16px;
+  right: 5px;
   content: '"';
   font-size: 40px;
   color: #D99C4E;
   font-family: 'Noto Sans',sans-serif;
-  line-height: 0;
+  transform: rotate(180deg); }
+
+.testimonial .media .media-body blockquote:after {
+  position: relative;
+  top: 5px;
+  content: '"';
+  font-size: 40px;
+  color: #D99C4E;
+  font-family: 'Noto Sans',sans-serif;
   transform: rotate(180deg); }
 
 .bottom > address {

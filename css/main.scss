@@ -276,10 +276,10 @@ ul{
         @include ordenimagenes(0px,0px);
     }
     .slider-circle1{
-        @include ordenimagenes(420px,210px);
+        @include ordenimagenes(435px,210px);
     }
     .slider-circle2{
-        @include ordenimagenes(415px,210px);
+        @include ordenimagenes(422px,241px);
     }
      .slider-cloud1{
         @include ordenimagenes(290px,250px);
@@ -293,7 +293,7 @@ ul{
     .slider-sun{
         @include ordenimagenes(200px,300px);
     }
-    .slider-clycle{
+    .slider-cycle{
         @include ordenimagenes(500px,0px);
     }
     h1{
@@ -306,14 +306,11 @@ ul{
     
 }
 #action{
-    background:url(../images/home/tour-bg.png);
-    background:#FBFAFA;
-    background-repeat:repeat-x;
-    background-position:center;
-    height:160px;
-    display:table;
-    width:100%;
-    position:relative;
+    background-image: url(../images/home/tour-bg.png);
+    background-color: #FBFAFA;
+    background-position: center;
+    height: 160px;
+    width: 100%;
 }
 .vertical-center{
     display:table-cell;
@@ -321,15 +318,18 @@ ul{
     vertical-align:middle;
     .action{
         h1{
-            margin-top:none;
+            margin-top: 50px;
+            margin-left: 30px;
         }
         p{
             margin-bottom:none;
+            margin-left: 30px;
             font-size:16px;
         }
         .btn-common{
             float:left;
-            margin-top:none;
+            margin-top: 57px;
+            margin-left: -15px;
         }
     }
 }
@@ -373,7 +373,6 @@ ul{
     .clients-logo{
         overflow:hidden;
         margin-bottom:15px;
-        
     }
 }
 .tour-button{
@@ -382,7 +381,8 @@ ul{
     background-repeat:no-repeat;
     background-position:150px 5px;
     position:absolute;
-    width:100%;
+    width:110%;
+    height: 160px;
 }
 #footer{
     background:url(../images/home/footer.png);
@@ -433,16 +433,25 @@ ul{
     position:relative;
     border-left:none;
     margin-bottom:none;
+    line-height: 1.1;
 }
 .testimonial .media .media-body blockquote:before{
-    position:absolute;
-    top:8px;
-    left:5px;
+    position: relative;
+    top: 16px;
+    right: 5px;
     content:'"';
     font-size:40px;
     color:#D99C4E;
     font-family:'Noto Sans',sans-serif;
-    line-height:0;
+    transform:rotate(180deg);
+}
+ .testimonial .media .media-body blockquote:after{
+    position: relative;
+    top: 5px;
+    content:'"';
+    font-size:40px;
+    color:#D99C4E;
+    font-family:'Noto Sans',sans-serif;
     transform:rotate(180deg);
 }
 .bottom > address {
